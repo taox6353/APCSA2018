@@ -12,18 +12,26 @@ public class Shape
 	private int height;
 	private Color color;
 
-   public Shape(int x, int y, int wid, int ht, Color col)
+   public Shape() 
    {
-		xPos = x;
-		//finish this constructor
+		
    }
 
 
    public void draw(Graphics window)
    {
-      window.setColor(color);
+      window.setColor(color.BLACK);
       window.fillRect(xPos, yPos, width, height);
 
+      window.setColor(color.CYAN);
+      window.fillRect(60, 60, 40, 40);
+      
+      window.setColor(color.GREEN);
+      window.fillRect(70, 70, 40, 40);
+      
+      window.setColor(color.YELLOW);
+      window.fillOval(80, 80, 50, 50);
+      
       //draw whatever you want
       //    ^
       //  [ :: ]

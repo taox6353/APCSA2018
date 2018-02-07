@@ -37,6 +37,8 @@ public class ShapePanel extends JPanel
 
 		//instantiate a Shape
 		//tell your shape to draw
+		Shape run = new Shape(); 
+		run.draw(window);
 
 		//instantiate a Shape
 		//tell your shape to draw

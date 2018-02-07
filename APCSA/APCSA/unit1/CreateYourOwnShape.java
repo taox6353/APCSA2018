@@ -1,5 +1,7 @@
 package unit1;
 
+import java.awt.Color;
+
 import javax.swing.JFrame;
 
 public class CreateYourOwnShape extends JFrame
@@ -13,7 +15,7 @@ public class CreateYourOwnShape extends JFrame
 		
 		setSize(WIDTH,HEIGHT);
 
-		//getContentPane().add(new SmileyFace());
+		getContentPane().add(new ShapePanel());
 		
 		//getContentPane().add(new BigHouse());		
 				
