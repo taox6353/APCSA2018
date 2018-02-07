@@ -1,5 +1,3 @@
-//THIS IS A WIP!! ERRORS ARE EXPECTED. DO NOT REMOVE THIS LABEL UNTIL THIS PROGRAM WORKS!!
-
 package unit3;
 
 import java.util.Scanner;
@@ -9,11 +7,11 @@ import static java.lang.Math.*;
 public class Lab03c
 {
 	public static void main( String[] args )
-   {
-		Quadratic quad = new Quadratic(); //edited, test this. 
+ {
+		Quadratic quad = new Quadratic(); 
 		
-		quad.Quadratic(a,b,c);
-		quad.solveroots(); //???
-		quad.print()
+		quad.setEquation(1,-2,1);
+		quad.calcRoots(); 
+		quad.print();
 	}
 }
