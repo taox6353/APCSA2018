@@ -1,5 +1,3 @@
-//THIS IS A WIP!! ERRORS ARE EXPECTED. DO NOT REMOVE THIS LABEL UNTIL THIS PROGRAM WORKS!!
-
 package unit3;
 
 import java.util.Scanner;
@@ -18,25 +16,24 @@ public class Quadratic
 
 	public Quadratic(int quadA, int quadB, int quadC)
 	{
-		
 	}
 
 	public void setEquation(int quadA, int quadB, int quadC)
 	{
-		float qA = quadA;
-		float qB = quadB;
-		float qC = quadC;
+		a = quadA;
+		b = quadB;
+		c = quadC;
  	}
 
 	public void calcRoots( )
 	{
-		rootone = -qB + (Math.sqrt(Math.pow(qB,2)-4*qA*qC))/2*qA; //thisisnew
-		roottwo = -qB - (Math.sqrt(Math.pow(qB,2)-4*qA*qC))/2*qA; //thisisnew
+		rootOne = (-b + (Math.sqrt(Math.pow(b, 2)-4*a*c)))/(2*a);
+		rootTwo = (-b - (Math.sqrt(Math.pow(b, 2)-4*a*c)))/(2*a);
 	}
 
 	public void print( )
 	{
-		System.out.println("rootone :: "+(String.format("%.2f",rootone)));
-		System.out.println("roottwo :: "+(String.format("%.2f",roottwo)));
+		System.out.println("rootone :: "+(String.format("%.2f",rootOne)));
+		System.out.println("roottwo :: "+(String.format("%.2f",rootTwo)));
 	}
 }
