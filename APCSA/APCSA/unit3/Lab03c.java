@@ -1,3 +1,5 @@
+//THIS IS A WIP!! ERRORS ARE EXPECTED. DO NOT REMOVE THIS LABEL UNTIL THIS PROGRAM WORKS!!
+
 package unit3;
 
 import java.util.Scanner;
@@ -8,10 +10,10 @@ public class Lab03c
 {
 	public static void main( String[] args )
    {
-   	//add test cases
-   	
-   	
+		Quadratic quad = new Quadratic(); //edited, test this. 
 		
-		
+		quad.Quadratic(a,b,c);
+		quad.solveroots(); //???
+		quad.print()
 	}
 }
