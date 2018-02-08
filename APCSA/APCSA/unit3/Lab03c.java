@@ -8,9 +8,18 @@ public class Lab03c
 {
 	public static void main( String[] args )
  {
-		Quadratic quad = new Quadratic(1,-2,1);
+		Scanner scan = new Scanner(System.in);
 		
-		quad.setEquation(1,-2,1);
+		System.out.println("Enter a :: ");
+		int a = scan.nextInt();
+		
+		System.out.println("Enter b :: ");
+		int b = scan.nextInt();
+		
+		System.out.println("Enter c :: ");
+		int c = scan.nextInt();
+		
+		Quadratic quad = new Quadratic(a,b,c);
 		quad.calcRoots(); 
 		quad.print();
 	}
