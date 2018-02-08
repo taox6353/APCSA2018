@@ -8,7 +8,7 @@ public class Lab03c
 {
 	public static void main( String[] args )
  {
-		Quadratic quad = new Quadratic(); 
+		Quadratic quad = new Quadratic(1,-2,1);
 		
 		quad.setEquation(1,-2,1);
 		quad.calcRoots(); 
