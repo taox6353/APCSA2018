@@ -12,10 +12,16 @@ public class Quadratic
 
 	public Quadratic()
 	{
+		a = 0;
+		b = 0;
+		c = 0;
+		rootOne = 0;
+		rootTwo = 0;
 	}
 
 	public Quadratic(int quadA, int quadB, int quadC)
 	{
+		setEquation(quadA, quadB, quadC);
 	}
 
 	public void setEquation(int quadA, int quadB, int quadC)
